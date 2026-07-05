@@ -16,8 +16,7 @@ Worth noting: this only helps for whatever you actually document in OKF. It is n
 
 ## Install
 
-<details>
-<summary><strong>Using skills.sh (recommended)</strong></summary>
+### Using skills.sh (recommended)
 
 Install with [`npx skills`](https://github.com/vercel-labs/skills):
 
@@ -26,8 +25,6 @@ npx skills add rakibtg/okf-skill --skill okf-skill
 ```
 
 This detects your agent (Claude Code, OpenCode, Codex, and others) and copies the skill into the right directory automatically.
-
-</details>
 
 <details>
 <summary><strong>Manual installation</strong></summary>
