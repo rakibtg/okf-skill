@@ -21,7 +21,7 @@ Worth noting: this only helps for whatever you actually document in OKF. It is n
 Install with [`npx skills`](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add rakibtg/okf-skill --skill okf
+npx skills add rakibtg/okf-skill
 ```
 
 This detects your agent (Claude Code, OpenCode, Codex, and others) and copies the skill into the right directory automatically.
@@ -33,18 +33,18 @@ Copy the `skills/okf` folder into whichever path your agent reads from. Most age
 
 ```bash
 # Claude Code (project)
-mkdir -p .claude/skills && cp -r skills/okf .claude/skills/okf
+mkdir -p .claude/skills && cp -r skills/okf .claude/skills/okf-skill
 
 # Claude Code (global, all projects)
-mkdir -p ~/.claude/skills && cp -r skills/okf ~/.claude/skills/okf
+mkdir -p ~/.claude/skills && cp -r skills/okf ~/.claude/skills/okf-skill
 
 # OpenCode (project)
-mkdir -p .opencode/skills && cp -r skills/okf .opencode/skills/okf
+mkdir -p .opencode/skills && cp -r skills/okf .opencode/skills/okf-skill
 # OpenCode also auto-discovers .claude/skills and .agents/skills, so the
 # Claude Code install above already works here too.
 
 # Codex, or any other Agent-Skills-compatible agent
-mkdir -p .agents/skills && cp -r skills/okf .agents/skills/okf
+mkdir -p .agents/skills && cp -r skills/okf .agents/skills/okf-skill
 ```
 
 No skills support at all? Just point the agent at the folder and say "read SKILL.md and follow it." Everything it needs is self-contained: instructions, scripts, spec, templates.
