@@ -77,7 +77,7 @@ There are two ways to use this, and both end up in the same place.
 
 **Option A: just ask your agent, in plain English.**
 
-Once installed, you don't need to remember any of the commands above. Your agent reads `SKILL.md`, picks the right script, and runs it for you. For example:
+Once installed, you don't need to remember any of the commands below. Your agent reads `SKILL.md`, picks the right script, and runs it for you. For example:
 
 ```
 "Set up an OKF knowledge bundle in docs/knowledge for our BigQuery tables"
